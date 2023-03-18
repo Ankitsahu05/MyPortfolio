@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu&display=swap');
+
+/* reset the css by setting '*' margin and padding to 0  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: fixed; /* page se alag display ke liya , so that content uske neeche rahe */
+    background-color: grey;
+    height: 100vw;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    /* to remove bullet points from <li> tag */
+    font-size: 35px;
+    padding: 40px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar nav li a:hover {
+    color: blue;
+}
+
+.main {
+    /*background-color: yellowgreen;*/
+    width: 80%;
+}
+
+/* set display to flex to show two divs side by side */
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    /*background-color: rebeccapurple;*/
+    height: 78vh;
+    width: 70vw;
+    margin: 127px auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 17rem;
+
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Courgette', cursive;
+    margin-left: 2rem;
+}
+
+.devPic img {
+    height: 78vh;
+}
+
+.hello {
+    font-size: 55px;
+}
+
+.name {
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: 'Phudu', cursive;
+}
+
+.about {
+    font-size: 35px;
+}
+
+.moreabout {
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-top: 35px;
+}
+
+.buttons button {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: royalblue;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buttons button:hover {
+    color: royalblue;
+    background-color: white;
+}
+
+.buttons button a bt:active {
+    background-color: #00CCC0;
+    border: 1px #000000 solid;
+    text-decoration: none;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross {
+    margin-left: 324px;
+    cursor: pointer;
+}
+
+.contactform{
+    margin-left: 382px;
+    margin-top: 126px;
+}
+.mb-3{
+    padding: 20px;
+}
+.btns{
+    cursor: pointer;
+    padding: 9px 22px;
+    border-radius: 22px;
+    color: white;
+    background-color: royalblue;
+    font-weight: bold;
+    font-size: 14px
+}
+.btns:hover{
+    color: royalblue;
+    background-color: white;
+}
+form{
+    margin-top: 10px;
+    background-color:cadetblue;
+    outline-style: outset;
+    position: relative;
+    width: 576px;
+    height: 500px;
+    border-radius: 25px;
+    font-size: 21px;
+    box-shadow: 13px 13px 43px rgb(0 0 0 / 30%);
+}
+input {
+    width: 375px;
+    display: block;
+    border: 1px solid #999;
+    height: 25px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  }
+
+/* 1556 width pe media query user karenge for responsiveness*/
+@media (max-width: 1556px) {
+    /*
+    .sidebar{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }
+    */
+    .devPic{
+        display: none; /* when screen's width below 1556px , don't display pic*/
+    }
+
+}
+@media (max-width: 1227px ){
+    .contactform{
+        margin-left: 3em;
+    }
+}
+

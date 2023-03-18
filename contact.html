@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PortFolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">Profile/About</a></li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="hamburger.png" alt="" width="23">
+                <img class="cross"src="crossi.png" alt="" width="23">
+            </div>
+            <div class="contactform">
+                <h1>For Contact Fill the Form</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="clientname" class="form-label">Name </label>
+                        <input type="text" class="form-control" id="clientname">
+                      </div>
+                    <div class="mb-3">
+                      <label for="clientemail" class="form-label">Email Id </label>
+                      <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="clientphone" class="form-label">Phone No. </label>
+                      <input type="number" class="form-control" id="clientphone">
+                    </div>
+                    <div class="mb-3">
+                        <label>
+                            <span>Message </span><textarea id="feedback" name="feedback"></textarea></label>
+                        
+                    </div>
+                    
+                    <button class="btns" type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
