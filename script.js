@@ -15,3 +15,24 @@ document.querySelector('.hamburger').addEventListener("click", ()=>{
         }, 250);
     }
 })
+
+// Get the form element
+const form = document.querySelector('form');
+
+// Get the submit button element
+const submitButton = document.getElementById('submit-button');
+
+// Add an event listener to the submit button
+submitButton.addEventListener('click', function(event) {
+  // Prevent the form from submitting
+  event.preventDefault();
+
+  // Get the form data
+  const formData = new FormData(form);
+
+  // Format the form data as a string
+  const formattedFormData = `Name: ${formData.get('name')}\nEmail: ${formData.get('email')}\nMessage: ${formData.get('message')}`;
+  
+  // Redirect to a mailto link that contains the formatted form data in the email body
+  window.location.href = `mailto:ankitsahu999bc@gmail.com?subject=Form Submission&body=${encodeURIComponent(formattedFormData)}`;
+});
